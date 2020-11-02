@@ -6,8 +6,8 @@ lazy val settings = Seq(
   version := "0.1",
   scalaVersion := "2.13.3",
     scalacOptions := Seq(
-      "-deprecation", // @deprecated なAPIが使われている箇所を警告します
-      "-feature",     // langauge feature の import が必要な箇所を警告します
+      "-deprecation", // warn using deprecated API
+      "-feature",
       "-unchecked",
       "-Xlint",
       "-Ywarn-dead-code",
@@ -21,4 +21,3 @@ lazy val settings = Seq(
 
 lazy val root = (project in file("."))
   .settings(settings)
-
